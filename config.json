@@ -1,0 +1,24 @@
+{
+  "detection": {
+    "conf_threshold": 0.5,
+    "nms_threshold": 0.4,
+    "classes": ["helmet", "gloves", "mask", "safety_vest", "goggles"]
+  },
+  "aws": {
+    "s3_bucket": "intelliguard-ppe-images",
+    "region": "us-east-1"
+  },
+  "smtp": {
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "from": "noreply@intelliguard.com"
+  },
+  "tensorboard": {
+    "log_dir": "logs/tensorboard"
+  },
+  "llm": {
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "model": "openai/gpt-4o",
+    "system_prompt": "You are an AI assistant for PPE compliance monitoring. Provide concise, accurate answers about safety equipment, compliance data, and workplace safety. You can also help with SQL queries related to PPE compliance data."
+  }
+}
